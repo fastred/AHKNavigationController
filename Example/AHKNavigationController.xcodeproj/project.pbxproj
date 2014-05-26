@@ -85,13 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				222120ED1932FFF700E0032A /* AHKAppDelegate.h */,
-				22212112193301F900E0032A /* AHKNavigationController.h */,
-				2221210D1933007A00E0032A /* AHKTestViewController.h */,
 				222120EE1932FFF700E0032A /* AHKAppDelegate.m */,
-				22212113193301F900E0032A /* AHKNavigationController.m */,
+				2221210D1933007A00E0032A /* AHKTestViewController.h */,
 				2221210E1933007A00E0032A /* AHKTestViewController.m */,
-				222120F01932FFF700E0032A /* Images.xcassets */,
 				2221210F1933007A00E0032A /* AHKTestViewController.xib */,
+				222120F01932FFF700E0032A /* Images.xcassets */,
 				222120E51932FFF700E0032A /* Supporting Files */,
 			);
 			path = AHKNavigationController;
