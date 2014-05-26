@@ -11,7 +11,7 @@ The solution is explained in detail in a blog post:
 
 ## Usage
 
-To run the example project: clone the repo, and run `pod install` from the Example directory first.
+To run the example project: clone the repo, and run `pod install` from the Example directory first. Alternatively, run `pod try AHKNavigationController` from the command line.
 
 ## Requirements
 
