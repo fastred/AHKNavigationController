@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AHKNavigationController"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "Drop-in replacement for UINavigationController that allows interactive pop gesture while the navigation bar is hidden."
 
   s.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   }
 
   s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/chakrit/AHKNavigationController.git", :tag => "v0.1.0" }
+  s.source       = { :git => "https://github.com/chakrit/AHKNavigationController.git", :tag => "v0.1.1" }
 
   s.source_files  = "LICENSE", "README.md", "AHKNavigationController/AHKNavigationController.m", "AHKNavigationController/AHKNavigationController.h"
   s.requires_arc = true
