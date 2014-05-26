@@ -1,24 +1,35 @@
 # AHKNavigationController
+[![Twitter: @arekholko](https://img.shields.io/badge/contact-@arekholko-red.svg?style=flat)](https://twitter.com/arekholko)
+[![License: MIT](https://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://github.com/fastred/AHKNavigationController/blob/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/v/AHKNavigationController.svg?style=flat)](https://github.com/fastred/AHKNavigationController)
 
-Drop-in replacement for `UINavigationController` that allows interactive pop gesture while
-the navigation bar is hidden.
 
-If you are using `UINavigationController` with `navigationBarHidden` set to `YES` you will
-lose the ability to swipe from the left edge of the screen to go back to previous
-controller. This implementation fixes the problem by re-enabling the gesture.
+A `UINavigationController` subclass that re-enables the interactive pop gesture (`UIScreenEdgePanGestureRecognizer` instance) when the navigation bar is hidden or a custom back button is used.
 
-This is not originally my work. I merely packaged what was described in this blog post:
-[Interactive Pop Gesture with Custom Back Button or Hidden Navigation Bar][0[]
+The solution is explained in detail in a blog post:
+[Interactive Pop Gesture with Custom Back Button or Hidden Navigation Bar][0]
 
-# USAGE
+## Usage
 
-If you are using CocoaPods, adds this line to your `Podfile`
+To run the example project: clone the repo, and run `pod install` from the Example directory first.
 
-```ruby
-pod 'AHKNavigationController'
-```
+## Requirements
 
-And simply import it in your code or set your navigation controller classes to
-`AHKNavigationController`.
+ * iOS 7
+ * ARC enabled
+
+## Installation
+
+AHKNavigationController is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+    pod "AHKNavigationController"
+
+and set your navigation controller to be an instance of `AHKNavigationController` or its subclass.
+
+## License
+
+AHKNavigationController is available under the MIT license. See the LICENSE file for more info. The example project was created by [@chakrit](https://github.com/chakrit).
+
 
 [0]: http://holko.pl/ios/2014/04/06/interactive-pop-gesture/
