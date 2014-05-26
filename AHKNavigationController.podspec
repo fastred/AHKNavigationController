@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     "Chakrit Wichian" => "service@chakrit.net"
   }
 
-  s.platform     = :ios, "6.1"
+  s.platform     = :ios, "6.0"
   s.source       = { :git => "https://github.com/chakrit/AHKNavigationController.git", :tag => "v0.1.0" }
 
   s.source_files  = "LICENSE", "README.md", "AHKNavigationController/AHKNavigationController.m", "AHKNavigationController/AHKNavigationController.h"
