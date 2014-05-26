@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AHKNavigationController"
-  s.version      = "0.1.1"
+  s.version      = "1.0"
   s.summary      = "A UINavigationController subclass allowing the interactive pop gesture when the navigation bar is hidden or a custom back button is used."
 
   s.homepage     = "https://github.com/fastred/AHKNavigationController"
@@ -9,8 +9,10 @@ Pod::Spec.new do |s|
   s.authors      = { "Arkadiusz Holko" => "fastred@fastred.org" }
 
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/fastred/AHKNavigationController.git", :tag => "v0.1.1" }
+  s.ios.deployment_target = '7.0'
+  s.source       = { :git => "https://github.com/fastred/AHKNavigationController.git", :tag => s.version.to_s }
 
-  s.source_files = "Classes"
+  s.source_files = 'Classes'
+  s.public_header_files = 'Classes/*.h'
   s.requires_arc = true
 end
