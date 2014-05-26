@@ -15,3 +15,5 @@ DerivedData
 *.ipa
 
 Pods/
+Example/Podfile.lock
+Example/AHKNavigationController.xcworkspace/contents.xcworkspacedata
