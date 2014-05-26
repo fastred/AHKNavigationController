@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		222120DF1932FFF700E0032A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222120DE1932FFF700E0032A /* Foundation.framework */; };
+		222120E11932FFF700E0032A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222120E01932FFF700E0032A /* CoreGraphics.framework */; };
+		222120E31932FFF700E0032A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222120E21932FFF700E0032A /* UIKit.framework */; };
+		222120E91932FFF700E0032A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 222120E71932FFF700E0032A /* InfoPlist.strings */; };
+		222120EB1932FFF700E0032A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 222120EA1932FFF700E0032A /* main.m */; };
+		222120EF1932FFF700E0032A /* AHKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 222120EE1932FFF700E0032A /* AHKAppDelegate.m */; };
+		222120F11932FFF700E0032A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222120F01932FFF700E0032A /* Images.xcassets */; };
+		222120F81932FFF700E0032A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222120F71932FFF700E0032A /* XCTest.framework */; };
+		222120F91932FFF700E0032A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222120DE1932FFF700E0032A /* Foundation.framework */; };
+		222120FA1932FFF700E0032A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222120E21932FFF700E0032A /* UIKit.framework */; };
+		222121021932FFF700E0032A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 222121001932FFF700E0032A /* InfoPlist.strings */; };
+		222121041932FFF700E0032A /* AHKNavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 222121031932FFF700E0032A /* AHKNavigationControllerTests.m */; };
+		222121101933007A00E0032A /* AHKTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221210E1933007A00E0032A /* AHKTestViewController.m */; };
+		222121111933007A00E0032A /* AHKTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2221210F1933007A00E0032A /* AHKTestViewController.xib */; };
+		22212114193301F900E0032A /* AHKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22212113193301F900E0032A /* AHKNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		222120FB1932FFF700E0032A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 222120D31932FFF700E0032A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 222120DA1932FFF700E0032A;
+			remoteInfo = AHKNavigationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		222120DB1932FFF700E0032A /* AHKNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHKNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		222120DE1932FFF700E0032A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		222120E01932FFF700E0032A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		222120E21932FFF700E0032A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		222120E61932FFF700E0032A /* AHKNavigationController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AHKNavigationController-Info.plist"; sourceTree = "<group>"; };
+		222120E81932FFF700E0032A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		222120EA1932FFF700E0032A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		222120EC1932FFF700E0032A /* AHKNavigationController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AHKNavigationController-Prefix.pch"; sourceTree = "<group>"; };
+		222120ED1932FFF700E0032A /* AHKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHKAppDelegate.h; sourceTree = "<group>"; };
+		222120EE1932FFF700E0032A /* AHKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHKAppDelegate.m; sourceTree = "<group>"; };
+		222120F01932FFF700E0032A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		222120F61932FFF700E0032A /* AHKNavigationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHKNavigationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		222120F71932FFF700E0032A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		222120FF1932FFF700E0032A /* AHKNavigationControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AHKNavigationControllerTests-Info.plist"; sourceTree = "<group>"; };
+		222121011932FFF700E0032A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		222121031932FFF700E0032A /* AHKNavigationControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHKNavigationControllerTests.m; sourceTree = "<group>"; };
+		2221210D1933007A00E0032A /* AHKTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHKTestViewController.h; sourceTree = "<group>"; };
+		2221210E1933007A00E0032A /* AHKTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHKTestViewController.m; sourceTree = "<group>"; };
+		2221210F1933007A00E0032A /* AHKTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AHKTestViewController.xib; sourceTree = "<group>"; };
+		22212112193301F900E0032A /* AHKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHKNavigationController.h; sourceTree = "<group>"; };
+		22212113193301F900E0032A /* AHKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHKNavigationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		222120D81932FFF700E0032A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222120E11932FFF700E0032A /* CoreGraphics.framework in Frameworks */,
+				222120E31932FFF700E0032A /* UIKit.framework in Frameworks */,
+				222120DF1932FFF700E0032A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222120F31932FFF700E0032A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222120F81932FFF700E0032A /* XCTest.framework in Frameworks */,
+				222120FA1932FFF700E0032A /* UIKit.framework in Frameworks */,
+				222120F91932FFF700E0032A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		222120D21932FFF700E0032A = {
+			isa = PBXGroup;
+			children = (
+				222120E41932FFF700E0032A /* AHKNavigationController */,
+				222120FD1932FFF700E0032A /* AHKNavigationControllerTests */,
+				222120DD1932FFF700E0032A /* Frameworks */,
+				222120DC1932FFF700E0032A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		222120DC1932FFF700E0032A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				222120DB1932FFF700E0032A /* AHKNavigationController.app */,
+				222120F61932FFF700E0032A /* AHKNavigationControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		222120DD1932FFF700E0032A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				222120DE1932FFF700E0032A /* Foundation.framework */,
+				222120E01932FFF700E0032A /* CoreGraphics.framework */,
+				222120E21932FFF700E0032A /* UIKit.framework */,
+				222120F71932FFF700E0032A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		222120E41932FFF700E0032A /* AHKNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				222120ED1932FFF700E0032A /* AHKAppDelegate.h */,
+				22212112193301F900E0032A /* AHKNavigationController.h */,
+				2221210D1933007A00E0032A /* AHKTestViewController.h */,
+				222120EE1932FFF700E0032A /* AHKAppDelegate.m */,
+				22212113193301F900E0032A /* AHKNavigationController.m */,
+				2221210E1933007A00E0032A /* AHKTestViewController.m */,
+				222120F01932FFF700E0032A /* Images.xcassets */,
+				2221210F1933007A00E0032A /* AHKTestViewController.xib */,
+				222120E51932FFF700E0032A /* Supporting Files */,
+			);
+			path = AHKNavigationController;
+			sourceTree = "<group>";
+		};
+		222120E51932FFF700E0032A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				222120EA1932FFF700E0032A /* main.m */,
+				222120EC1932FFF700E0032A /* AHKNavigationController-Prefix.pch */,
+				222120E61932FFF700E0032A /* AHKNavigationController-Info.plist */,
+				222120E71932FFF700E0032A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		222120FD1932FFF700E0032A /* AHKNavigationControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				222121031932FFF700E0032A /* AHKNavigationControllerTests.m */,
+				222120FE1932FFF700E0032A /* Supporting Files */,
+			);
+			path = AHKNavigationControllerTests;
+			sourceTree = "<group>";
+		};
+		222120FE1932FFF700E0032A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				222120FF1932FFF700E0032A /* AHKNavigationControllerTests-Info.plist */,
+				222121001932FFF700E0032A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		222120DA1932FFF700E0032A /* AHKNavigationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222121071932FFF700E0032A /* Build configuration list for PBXNativeTarget "AHKNavigationController" */;
+			buildPhases = (
+				222120D71932FFF700E0032A /* Sources */,
+				222120D81932FFF700E0032A /* Frameworks */,
+				222120D91932FFF700E0032A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHKNavigationController;
+			productName = AHKNavigationController;
+			productReference = 222120DB1932FFF700E0032A /* AHKNavigationController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		222120F51932FFF700E0032A /* AHKNavigationControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2221210A1932FFF700E0032A /* Build configuration list for PBXNativeTarget "AHKNavigationControllerTests" */;
+			buildPhases = (
+				222120F21932FFF700E0032A /* Sources */,
+				222120F31932FFF700E0032A /* Frameworks */,
+				222120F41932FFF700E0032A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				222120FC1932FFF700E0032A /* PBXTargetDependency */,
+			);
+			name = AHKNavigationControllerTests;
+			productName = AHKNavigationControllerTests;
+			productReference = 222120F61932FFF700E0032A /* AHKNavigationControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		222120D31932FFF700E0032A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AHK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Suffixlab;
+				TargetAttributes = {
+					222120F51932FFF700E0032A = {
+						TestTargetID = 222120DA1932FFF700E0032A;
+					};
+				};
+			};
+			buildConfigurationList = 222120D61932FFF700E0032A /* Build configuration list for PBXProject "AHKNavigationController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 222120D21932FFF700E0032A;
+			productRefGroup = 222120DC1932FFF700E0032A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				222120DA1932FFF700E0032A /* AHKNavigationController */,
+				222120F51932FFF700E0032A /* AHKNavigationControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		222120D91932FFF700E0032A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222121111933007A00E0032A /* AHKTestViewController.xib in Resources */,
+				222120E91932FFF700E0032A /* InfoPlist.strings in Resources */,
+				222120F11932FFF700E0032A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222120F41932FFF700E0032A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222121021932FFF700E0032A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		222120D71932FFF700E0032A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222120EB1932FFF700E0032A /* main.m in Sources */,
+				22212114193301F900E0032A /* AHKNavigationController.m in Sources */,
+				222121101933007A00E0032A /* AHKTestViewController.m in Sources */,
+				222120EF1932FFF700E0032A /* AHKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222120F21932FFF700E0032A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222121041932FFF700E0032A /* AHKNavigationControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		222120FC1932FFF700E0032A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 222120DA1932FFF700E0032A /* AHKNavigationController */;
+			targetProxy = 222120FB1932FFF700E0032A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		222120E71932FFF700E0032A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222120E81932FFF700E0032A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		222121001932FFF700E0032A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222121011932FFF700E0032A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		222121051932FFF700E0032A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		222121061932FFF700E0032A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		222121081932FFF700E0032A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AHKNavigationController/AHKNavigationController-Prefix.pch";
+				INFOPLIST_FILE = "AHKNavigationController/AHKNavigationController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		222121091932FFF700E0032A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AHKNavigationController/AHKNavigationController-Prefix.pch";
+				INFOPLIST_FILE = "AHKNavigationController/AHKNavigationController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2221210B1932FFF700E0032A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AHKNavigationController.app/AHKNavigationController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AHKNavigationController/AHKNavigationController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AHKNavigationControllerTests/AHKNavigationControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2221210C1932FFF700E0032A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AHKNavigationController.app/AHKNavigationController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AHKNavigationController/AHKNavigationController-Prefix.pch";
+				INFOPLIST_FILE = "AHKNavigationControllerTests/AHKNavigationControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		222120D61932FFF700E0032A /* Build configuration list for PBXProject "AHKNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222121051932FFF700E0032A /* Debug */,
+				222121061932FFF700E0032A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		222121071932FFF700E0032A /* Build configuration list for PBXNativeTarget "AHKNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222121081932FFF700E0032A /* Debug */,
+				222121091932FFF700E0032A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2221210A1932FFF700E0032A /* Build configuration list for PBXNativeTarget "AHKNavigationControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2221210B1932FFF700E0032A /* Debug */,
+				2221210C1932FFF700E0032A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 222120D31932FFF700E0032A /* Project object */;
+}
