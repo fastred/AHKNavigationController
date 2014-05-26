@@ -1,5 +1,9 @@
 #import "AHKTestViewController.h"
 
+@interface AHKTestViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+@end
+
 @implementation AHKTestViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -13,17 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[self titleLabel] setText:[self title]];
+
+    if ([self.navigationController.viewControllers count] < 2) {
+        self.backButton.hidden = YES;
+    }
 }
 
 
 - (UIRectEdge)edgesForExtendedLayout { return UIRectEdgeNone; }
 
 
-- (void)didTapBack:(id)sender {
+- (void)didTapPop:(id)sender {
     [[self navigationController] popViewControllerAnimated:YES];
 }
 
-- (void)didTapNext:(id)sender {
+- (void)didTapPush:(id)sender {
     AHKTestViewController *next = [[AHKTestViewController alloc] initWithNibName:nil bundle:nil];
     [[self navigationController] pushViewController:next animated:YES];
 }

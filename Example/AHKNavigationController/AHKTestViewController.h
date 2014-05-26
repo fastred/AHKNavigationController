@@ -4,7 +4,7 @@
 
 @property (nonatomic, assign) IBOutlet UILabel *titleLabel;
 
-- (IBAction)didTapBack:(id)sender;
-- (IBAction)didTapNext:(id)sender;
+- (IBAction)didTapPop:(id)sender;
+- (IBAction)didTapPush:(id)sender;
 
 @end
