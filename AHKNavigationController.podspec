@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "0.1.1"
   s.summary      = "A UINavigationController replacement allowing interactive pop gesture when the navigation bar is hidden or a custom back button is used."
 
-  s.homepage     = "http://holko.pl/ios/2014/04/06/interactive-pop-gesture/"
+  s.homepage     = "https://github.com/fastred/AHKNavigationController"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   
   s.authors      = { "Arkadiusz Holko" => "fastred@fastred.org" }
