@@ -27,9 +27,8 @@
 {
     [super viewDidLoad];
 
-    __weak typeof(self) weakSelf = self;
-    self.delegate = weakSelf;
-    self.interactivePopGestureRecognizer.delegate = weakSelf;
+    self.delegate = self;
+    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 #pragma mark - UINavigationController
