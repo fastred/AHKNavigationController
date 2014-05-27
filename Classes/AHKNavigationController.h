@@ -5,4 +5,7 @@
 /// A UINavigationController subclass allowing the interactive pop gesture when the navigation bar is hidden or a custom back button is used.
 @interface AHKNavigationController : UINavigationController
 
+- (void)pushViewController:(UIViewController *)viewController
+                  animated:(BOOL)animated __attribute__((objc_requires_super));
+
 @end
