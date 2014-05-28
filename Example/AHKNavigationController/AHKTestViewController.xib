@@ -24,7 +24,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="didTapPop:" destination="-1" eventType="touchUpInside" id="2r5-e3-CKi"/>
+                        <action selector="popButtonTapped:" destination="-1" eventType="touchUpInside" id="qWx-2P-O2t"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQT-UR-VPj" userLabel="Next Button">
@@ -34,7 +34,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="didTapPush:" destination="-1" eventType="touchUpInside" id="MXd-Lc-Mue"/>
+                        <action selector="pushButtonTapped:" destination="-1" eventType="touchUpInside" id="ymP-G8-M9B"/>
                     </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HP-Wc-Dxd">

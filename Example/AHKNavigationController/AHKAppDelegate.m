@@ -4,25 +4,20 @@
 
 @implementation AHKAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     AHKTestViewController *controller = [[AHKTestViewController alloc] initWithNibName:nil bundle:nil];
     AHKNavigationController *nav = [[AHKNavigationController alloc] initWithRootViewController:controller];
-    [nav setNavigationBarHidden:YES];
+    nav.navigationBarHidden = YES;
 
-    CGRect frame = [[UIScreen mainScreen] bounds];
+    CGRect frame = [UIScreen mainScreen].bounds;
     UIWindow *window = [[UIWindow alloc] initWithFrame:frame];
-    [window setRootViewController:nav];
-    [window setBackgroundColor:[UIColor whiteColor]];
+    window.rootViewController = nav;
+    window.backgroundColor = [UIColor whiteColor];
     [window makeKeyAndVisible];
+    self.window = window;
 
-    _window = window;
     return YES;
 }
-
-- (void)applicationWillResignActive:(UIApplication *)application { }
-- (void)applicationDidEnterBackground:(UIApplication *)application { }
-- (void)applicationWillEnterForeground:(UIApplication *)application { }
-- (void)applicationDidBecomeActive:(UIApplication *)application { }
-- (void)applicationWillTerminate:(UIApplication *)application { }
 
 @end
