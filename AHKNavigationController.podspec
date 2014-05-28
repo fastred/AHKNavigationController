@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AHKNavigationController"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "A UINavigationController subclass allowing the interactive pop gesture when the navigation bar is hidden or a custom back button is used."
 
   s.homepage     = "https://github.com/fastred/AHKNavigationController"
