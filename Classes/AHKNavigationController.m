@@ -4,6 +4,11 @@
 
 @interface AHKNavigationController () <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, getter = isPushingViewController) BOOL pushingViewController;
+
+// A real delegate of the class. self.delegate is used only for keeping an internal state during
+// animations; we need to know when the animation ended, and that info is available only
+// from `navigationController:didShowViewController:animated:`.
+@property (weak, nonatomic) id<UINavigationControllerDelegate> realDelegate;
 @end
 
 @implementation AHKNavigationController
@@ -22,15 +27,20 @@
 {
     [super viewDidLoad];
 
-    __weak typeof(self) weakSelf = self;
-    self.delegate = weakSelf;
-    self.interactivePopGestureRecognizer.delegate = weakSelf;
+    self.delegate = self;
+    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 #pragma mark - UINavigationController
 
+- (void)setDelegate:(id<UINavigationControllerDelegate>)delegate
+{
+    [super setDelegate:delegate ? self : nil];
+    self.realDelegate = delegate != self ? delegate : nil;
+}
+
 - (void)pushViewController:(UIViewController *)viewController
-                  animated:(BOOL)animated
+                  animated:(BOOL)animated __attribute__((objc_requires_super))
 {
     self.pushingViewController = YES;
     [super pushViewController:viewController animated:animated];
@@ -43,6 +53,10 @@
                     animated:(BOOL)animated
 {
     self.pushingViewController = NO;
+
+    if ([self.realDelegate respondsToSelector:_cmd]) {
+        [self.realDelegate navigationController:navigationController didShowViewController:viewController animated:animated];
+    }
 }
 
 #pragma mark - UIGestureRecognizerDelegate
@@ -57,6 +71,28 @@
     } else {
         // default value
         return YES;
+    }
+}
+
+#pragma mark - Delegate Forwarder
+
+// Thanks for the idea goes to: https://github.com/steipete/PSPDFTextView/blob/ee9ce04ad04217efe0bc84d67f3895a34252d37c/PSPDFTextView/PSPDFTextView.m#L148-164
+
+- (BOOL)respondsToSelector:(SEL)s
+{
+    return [super respondsToSelector:s] || [self.realDelegate respondsToSelector:s];
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)s
+{
+    return [super methodSignatureForSelector:s] ?: [(id)self.realDelegate methodSignatureForSelector:s];
+}
+
+- (void)forwardInvocation:(NSInvocation *)invocation
+{
+    id delegate = self.realDelegate;
+    if ([delegate respondsToSelector:invocation.selector]) {
+        [invocation invokeWithTarget:delegate];
     }
 }
 
