@@ -2,7 +2,7 @@
 
 #import <UIKit/UIKit.h>
 
-/// A UINavigationController subclass allowing the interactive pop gesture when the navigation bar is hidden or a custom back button is used.
+/// A UINavigationController subclass allowing the interactive pop gesture to be recognized when the navigation bar is hidden or a custom back button is used.
 @interface AHKNavigationController : UINavigationController
 
 - (void)pushViewController:(UIViewController *)viewController

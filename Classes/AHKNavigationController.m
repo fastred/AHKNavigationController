@@ -3,11 +3,11 @@
 #import "AHKNavigationController.h"
 
 @interface AHKNavigationController () <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
+/// A Boolean value indicating whether navigation controller is currently pushing a new view controller on the stack.
 @property (nonatomic, getter = isDuringPushAnimation) BOOL duringPushAnimation;
-
-// A real delegate of the class. self.delegate is used only for keeping an internal state during
-// animations; we need to know when the animation ended, and that info is available only
-// from `navigationController:didShowViewController:animated:`.
+/// A real delegate of the class. `delegate` property is used only for keeping an internal state during
+/// animations – we need to know when the animation ended, and that info is available only
+/// from `navigationController:didShowViewController:animated:`.
 @property (weak, nonatomic) id<UINavigationControllerDelegate> realDelegate;
 @end
 
