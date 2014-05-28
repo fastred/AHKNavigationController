@@ -9,7 +9,7 @@ A `UINavigationController` subclass that re-enables the interactive pop gesture 
 The solution is explained in detail in a blog post:
 [Interactive Pop Gesture with Custom Back Button or Hidden Navigation Bar][0]
 
-## Usage
+## Demo
 
 To run the example project: clone the repo, and run `pod install` from the Example directory first. Alternatively, run `pod try AHKNavigationController` from the command line.
 
