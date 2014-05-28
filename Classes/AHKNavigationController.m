@@ -52,6 +52,8 @@
        didShowViewController:(UIViewController *)viewController
                     animated:(BOOL)animated
 {
+    NSCAssert(self.interactivePopGestureRecognizer.delegate == self, @"AHKNavigationController won't work correctly if you change interactivePopGestureRecognizer's delegate.");
+
     self.duringPushAnimation = NO;
 
     if ([self.realDelegate respondsToSelector:_cmd]) {
