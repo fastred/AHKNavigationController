@@ -17,3 +17,4 @@ DerivedData
 Pods/
 Example/Podfile.lock
 Example/AHKNavigationController.xcworkspace/contents.xcworkspacedata
+Rakefile
