@@ -3,7 +3,7 @@
 #import "AHKNavigationController.h"
 
 @interface AHKNavigationController () <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
-@property (nonatomic, getter = isPushingViewController) BOOL pushingViewController;
+@property (nonatomic, getter = isDuringPushAnimation) BOOL duringPushAnimation;
 
 // A real delegate of the class. self.delegate is used only for keeping an internal state during
 // animations; we need to know when the animation ended, and that info is available only
@@ -42,7 +42,7 @@
 - (void)pushViewController:(UIViewController *)viewController
                   animated:(BOOL)animated __attribute__((objc_requires_super))
 {
-    self.pushingViewController = YES;
+    self.duringPushAnimation = YES;
     [super pushViewController:viewController animated:animated];
 }
 
@@ -52,7 +52,7 @@
        didShowViewController:(UIViewController *)viewController
                     animated:(BOOL)animated
 {
-    self.pushingViewController = NO;
+    self.duringPushAnimation = NO;
 
     if ([self.realDelegate respondsToSelector:_cmd]) {
         [self.realDelegate navigationController:navigationController didShowViewController:viewController animated:animated];
@@ -67,7 +67,7 @@
         // Disable pop gesture in two situations:
         // 1) when the pop animation is in progress
         // 2) when user swipes quickly a couple of times and animations don't have time to be performed
-        return [self.viewControllers count] > 1 && !self.isPushingViewController;
+        return [self.viewControllers count] > 1 && !self.isDuringPushAnimation;
     } else {
         // default value
         return YES;
