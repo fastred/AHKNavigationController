@@ -27,6 +27,8 @@ it, simply add the following line to your Podfile:
 
 and set your navigation controller to be an instance of `AHKNavigationController` or its subclass.
 
+If you don't use CocoaPods, you can simply copy the files from `Classes/` directory to your project.
+
 ## License
 
 AHKNavigationController is available under the MIT license. See the LICENSE file for more info. The example project was created by [@chakrit](https://github.com/chakrit).
