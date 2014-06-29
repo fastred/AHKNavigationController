@@ -1,5 +1,4 @@
 # AHKNavigationController
-[![Twitter: @arekholko](https://img.shields.io/badge/contact-@arekholko-red.svg?style=flat)](https://twitter.com/arekholko)
 [![License: MIT](https://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://github.com/fastred/AHKNavigationController/blob/master/LICENSE)
 [![CocoaPods](https://img.shields.io/cocoapods/v/AHKNavigationController.svg?style=flat)](https://github.com/fastred/AHKNavigationController)
 
@@ -28,6 +27,13 @@ it, simply add the following line to your Podfile:
 and set your navigation controller to be an instance of `AHKNavigationController` or its subclass.
 
 If you don't use CocoaPods, you can simply copy the files from `Classes/` directory to your project.
+
+## Author
+
+Arkadiusz Holko:
+
+* [Blog](http://holko.pl/)
+* [@arekholko on Twitter](https://twitter.com/arekholko)
 
 ## Credits
 
