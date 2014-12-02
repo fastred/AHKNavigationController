@@ -27,7 +27,10 @@
 {
     [super viewDidLoad];
 
-    self.delegate = self;
+    if (!self.delegate) {
+        self.delegate = self;
+    }
+
     self.interactivePopGestureRecognizer.delegate = self;
 }
 
