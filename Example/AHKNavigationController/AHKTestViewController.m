@@ -3,7 +3,7 @@
 
 @interface AHKTestViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
-@property (weak, nonatomic) IBOutlet UISwitch *enabledWhenOtherGuesturesAreActiveSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *enabledWhenOtherGesturesAreActiveSwitch;
 @property (nonatomic, assign) IBOutlet UILabel *titleLabel;
 @end
 
@@ -21,7 +21,7 @@
 }
 - (IBAction)enabledWhenOtherGuesturesAreActiveChanged:(UISwitch *)sender {
     AHKNavigationController *nc = (AHKNavigationController *)self.navigationController;
-    nc.enabledWhenOtherGuesturesAreActive = self.enabledWhenOtherGuesturesAreActiveSwitch.isOn;
+    nc.enabledWhenOtherGesturesAreActive = self.enabledWhenOtherGesturesAreActiveSwitch.isOn;
     
 }
 
@@ -37,7 +37,7 @@
     
     AHKNavigationController *nc = (AHKNavigationController *)self.navigationController;
     
-    self.enabledWhenOtherGuesturesAreActiveSwitch.on = nc.enabledWhenOtherGuesturesAreActive;
+    self.enabledWhenOtherGesturesAreActiveSwitch.on = nc.enabledWhenOtherGesturesAreActive;
     
 }
 

@@ -96,7 +96,7 @@
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    return self.enabledWhenOtherGuesturesAreActive;
+    return self.enabledWhenOtherGesturesAreActive;
 }
 
 

@@ -5,7 +5,7 @@
 /// A UINavigationController subclass allowing the interactive pop gesture to be recognized when the navigation bar is hidden or a custom back button is used.
 @interface AHKNavigationController : UINavigationController
 
-@property (assign, nonatomic) BOOL enabledWhenOtherGuesturesAreActive;
+@property (assign, nonatomic) BOOL enabledWhenOtherGesturesAreActive;
 
 - (void)pushViewController:(UIViewController *)viewController
                   animated:(BOOL)animated __attribute__((objc_requires_super));

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AHKTestViewController">
             <connections>
                 <outlet property="backButton" destination="LP9-ER-1Gc" id="HOd-zr-WL1"/>
-                <outlet property="enabledWhenOtherGuesturesAreActiveSwitch" destination="JNU-0s-Ty5" id="Xa6-dv-nL4"/>
+                <outlet property="enabledWhenOtherGesturesAreActiveSwitch" destination="JNU-0s-Ty5" id="HVI-uO-m6D"/>
                 <outlet property="titleLabel" destination="9HP-Wc-Dxd" id="Pbt-2y-buG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -46,8 +45,8 @@
                     <rect key="frame" x="0.0" y="309" width="380" height="128"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXg-F2-TRX">
-                            <rect key="frame" x="30" y="53" width="1580.5" height="21"/>
-                            <string key="text">This is a scrollview. The pop guesture in the navigation controller is disabled when enabledWhenOtherGuesturesAreActive property is off.  Turning it on will make the pop guesture work even in this scrollview.</string>
+                            <rect key="frame" x="30" y="53" width="1552" height="21"/>
+                            <string key="text">This is a scrollview. The pop gesture in the navigation controller is disabled when enabledWhenOtherGesturesAreActive property is off.  Turning it on will make the pop gesture work even in this scrollview.</string>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
@@ -69,8 +68,8 @@
                         <action selector="enabledWhenOtherGuesturesAreActiveChanged:" destination="-1" eventType="valueChanged" id="xeJ-SV-AqL"/>
                     </connections>
                 </switch>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enabledWhenOtherGuesturesAreActive" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9D4-5K-rwa">
-                    <rect key="frame" x="70" y="277" width="251.5" height="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enabledWhenOtherGesturesAreActive" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9D4-5K-rwa">
+                    <rect key="frame" x="70" y="277" width="243.5" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
