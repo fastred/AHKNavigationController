@@ -1,7 +1,9 @@
 #import "AHKTestViewController.h"
+#import <AHKNavigationController.h>
 
 @interface AHKTestViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet UISwitch *enabledWhenOtherGuesturesAreActiveSwitch;
 @property (nonatomic, assign) IBOutlet UILabel *titleLabel;
 @end
 
@@ -17,6 +19,11 @@
     }
     return self;
 }
+- (IBAction)enabledWhenOtherGuesturesAreActiveChanged:(UISwitch *)sender {
+    AHKNavigationController *nc = (AHKNavigationController *)self.navigationController;
+    nc.enabledWhenOtherGuesturesAreActive = self.enabledWhenOtherGuesturesAreActiveSwitch.isOn;
+    
+}
 
 - (void)viewDidLoad
 {
@@ -27,6 +34,11 @@
     if ([self.navigationController.viewControllers count] < 2) {
         self.backButton.hidden = YES;
     }
+    
+    AHKNavigationController *nc = (AHKNavigationController *)self.navigationController;
+    
+    self.enabledWhenOtherGuesturesAreActiveSwitch.on = nc.enabledWhenOtherGuesturesAreActive;
+    
 }
 
 - (UIRectEdge)edgesForExtendedLayout
