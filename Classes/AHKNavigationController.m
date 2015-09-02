@@ -38,8 +38,8 @@
 
 - (void)setDelegate:(id<UINavigationControllerDelegate>)delegate
 {
+	self.realDelegate = delegate != self ? delegate : nil;
     [super setDelegate:delegate ? self : nil];
-    self.realDelegate = delegate != self ? delegate : nil;
 }
 
 - (void)pushViewController:(UIViewController *)viewController
