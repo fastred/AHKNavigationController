@@ -64,22 +64,6 @@
     }
 }
 
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController*)fromVC toViewController:(UIViewController*)toVC
-{
-    if ([self.realDelegate respondsToSelector:_cmd]) {
-        return [self.realDelegate navigationController:navigationController animationControllerForOperation:operation fromViewController:fromVC toViewController:toVC];
-    }
-    return nil;
-}
-
-- (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController*)navigationController interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>)animationController
-{
-    if ([self.realDelegate respondsToSelector:_cmd]) {
-        return [self.realDelegate navigationController:navigationController interactionControllerForAnimationController:animationController];
-    }
-    return nil;
-}
-
 #pragma mark - UIGestureRecognizerDelegate
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
