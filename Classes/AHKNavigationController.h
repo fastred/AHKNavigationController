@@ -8,4 +8,7 @@
 - (void)pushViewController:(UIViewController *)viewController
                   animated:(BOOL)animated __attribute__((objc_requires_super));
 
+/// A Boolean value that controls whether the pop gesture is disabled.
+@property (nonatomic, assign) BOOL popGestureDisabled;
+
 @end

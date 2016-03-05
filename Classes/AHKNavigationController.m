@@ -69,6 +69,10 @@
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
     if (gestureRecognizer == self.interactivePopGestureRecognizer) {
+        // Disable pop gesture when `popGestureDisabled` flag is true
+        if (self.popGestureDisabled) {
+            return NO;
+        }
         // Disable pop gesture in two situations:
         // 1) when the pop animation is in progress
         // 2) when user swipes quickly a couple of times and animations don't have time to be performed
