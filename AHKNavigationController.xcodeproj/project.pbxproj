@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F6478CB61F0CDB8100A9005B /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = F6478CB51F0CDB8100A9005B /* Classes */; };
 		F6478CB81F0CDBC900A9005B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6478CB71F0CDBC900A9005B /* Info.plist */; };
+		F6478CBC1F0CDFD500A9005B /* AHKNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = F6478CBB1F0CDFD500A9005B /* AHKNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6478CBE1F0CE02B00A9005B /* AHKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6478CBD1F0CE02B00A9005B /* AHKNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F6478CAA1F0CDB1000A9005B /* AHKNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHKNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6478CB51F0CDB8100A9005B /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 		F6478CB71F0CDBC900A9005B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6478CBB1F0CDFD500A9005B /* AHKNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AHKNavigationController.h; path = Classes/AHKNavigationController.h; sourceTree = "<group>"; };
+		F6478CBD1F0CE02B00A9005B /* AHKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHKNavigationController.m; path = Classes/AHKNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +33,8 @@
 		F6478CA01F0CDB1000A9005B = {
 			isa = PBXGroup;
 			children = (
-				F6478CB51F0CDB8100A9005B /* Classes */,
+				F6478CBD1F0CE02B00A9005B /* AHKNavigationController.m */,
+				F6478CBB1F0CDFD500A9005B /* AHKNavigationController.h */,
 				F6478CB71F0CDBC900A9005B /* Info.plist */,
 				F6478CAB1F0CDB1000A9005B /* Products */,
 			);
@@ -52,6 +55,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6478CBC1F0CDFD500A9005B /* AHKNavigationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +118,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6478CB81F0CDBC900A9005B /* Info.plist in Resources */,
-				F6478CB61F0CDB8100A9005B /* Classes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6478CBE1F0CE02B00A9005B /* AHKNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
